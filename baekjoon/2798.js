@@ -13,6 +13,8 @@ require('readline')
     console.log(solve(n, m, arr));
   });
 
+// 완전탐색 => 경우의 수 구하기
+// 최대 100개의 카드에서 3개의 카드를 뽑는 경우 (100*99*98/3*2*1)
 function solve(n, m, arr) {
   let result = 0;
   for(let i = 0; i < n; i++) {
@@ -20,7 +22,7 @@ function solve(n, m, arr) {
       for(let k = j + 1; k < n; k++) {
         let sum = arr[i] + arr[j] + arr[k];
         if(sum <= m) {
-          result = Math.max(result, sum);
+          result = Math.max(result, sum); // result, sum 중 최대값을 result에 반환한다.
         }
       }
     }
