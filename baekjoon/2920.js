@@ -9,6 +9,9 @@ require('readline')
     console.log(solve(input));
   });
 
+/* 배열
+ * https://www.acmicpc.net/problem/2920
+ */
 function solve(input) {
   let asc = true;
   let desc = true;

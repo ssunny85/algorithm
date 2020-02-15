@@ -13,8 +13,10 @@ require('readline')
     console.log(solve(n, m, arr));
   });
 
-// 완전탐색 => 경우의 수 구하기
-// 최대 100개의 카드에서 3개의 카드를 뽑는 경우 (100*99*98/3*2*1)
+/* 완전탐색 => 경우의 수 구하기
+ * 최대 100개의 카드에서 3개의 카드를 뽑는 경우 (100*99*98/3*2*1)
+ * https://www.acmicpc.net/problem/2798
+ */
 function solve(n, m, arr) {
   let result = 0;
   for(let i = 0; i < n; i++) {
